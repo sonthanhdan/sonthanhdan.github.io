@@ -1,0 +1,104 @@
+.App-logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 38px;
+  position: absolute;
+}
+.myfixtop{
+   overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.index-banner {
+    min-height: 700px;
+    background-color:#212121;
+    margin-bottom: 0px;
+    padding: 100px 0px 10px 0px;
+}
+.education{
+    min-height: 700px;
+    padding: 100px 0px 10px 0px;
+    background-color: #2196F3;
+}
+.experience{
+    min-height: 700px;
+    padding: 100px 0px 10px 0px;
+    background-color: #808080;
+}
+.skills{
+    min-height: 700px;
+    padding: 100px 0px 10px 0px;
+    background-color: #2196F3;
+    margin-bottom: 0px;
+}
+.project{
+    min-height: 700px;
+    padding: 100px 0px 10px 0px;
+    background-color: #808080;
+    margin-bottom: 0px;
+}
+.contact{
+    min-height: 700px;
+    padding: 100px 0px 10px 0px;
+    background-color: #f7f7f7;
+    margin-bottom: 0px;
+}
+.divme{
+    min-height: 700px;
+    padding: 100px 0px 10px 0px;
+    background-color:#0f1213;
+    margin-bottom: 0px;
+}
+.rme{
+  color: lime; 
+  font-family: "Courier";
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 470px;
+  animation: type 4s steps(60, end);
+  animation: type 4s infinite;
+}
+.rme:nth-child(2){
+  animation: type2 4s steps(60, end); 
+}
+.rme a{
+  color: lime;
+  text-decoration: none;
+}
+.mespan{
+  animation: blink 1s infinite;
+}
+.me{
+  color: lime; 
+  font-family: "Courier";
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 470px;
+  animation: type 4s steps(60, end);
+}
+#sidenav-overlay { 
+ position: static;
+ }
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+::selection{
+  background: black;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

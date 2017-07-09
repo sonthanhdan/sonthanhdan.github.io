@@ -54,7 +54,7 @@
 .rme{
   color: lime; 
   font-family: "Courier";
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0px;
   white-space: nowrap;
   overflow: hidden;
   width: 470px;
@@ -76,11 +76,12 @@
 .me{
   color: lime; 
   font-family: "Courier";
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0px;
   white-space: nowrap;
   overflow: hidden;
   width: 470px;
   animation: type 4s steps(60, end);
+  justify-content: center;
 }
 #sidenav-overlay { 
  position: static;

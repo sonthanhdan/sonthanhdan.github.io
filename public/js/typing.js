@@ -8,7 +8,7 @@ var timeChar = 60;       // time until next letter
 var cursorChar = '&#124';
 
 var originId = [
-  'in1','in2','in3','edu1p','edu2p','exp1p','exp2p','langp','techp','aboutme'
+  'in1','in2','in3','aboutme'
   ];
 var originText = new Array();
 for (var i = 0; i < originId.length; i++) {

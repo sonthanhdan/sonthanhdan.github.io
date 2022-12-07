@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sonthanhdan/sonthanhdan.github.io/pages%20build%20and%20deployment)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sonthanhdan/sonthanhdan.github.io/pages%20build%20and%20deployment) ![GitHub deployments](https://img.shields.io/github/deployments/sonthanhdan/sonthanhdan.github.io/github-pages)
 # Resume template
 
 Small project using html and uikit build a static web. Thank to uikit css.

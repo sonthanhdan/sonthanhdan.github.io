@@ -2,19 +2,33 @@
 <html class="no-js" lang="en">
 
 <head>
-  <title>resume | Son Thanh Dan</title>
-  <base href="/" />
+  <title>Dan's Resume | Fullstack Web Developer</title>
+  <meta name="title" content="Dan's Resume | Fullstack Web Developer">
+  <meta name="description" content="Just a simple resume page building with html and css. Like coding and everything simple.">
+  <meta name="keywords" content="resume, resume templates, full stack developer, simple cv template" />
+  <meta name="robots" content="index,follow" />
+  <meta name="google-site-verification" content="google15d4ab0b1a05f3f4" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sonthanhdan.github.io/">
+  <meta property="og:title" content="Dan's Resume | Fullstack Web Developer">
+  <meta property="og:description" content="Just a simple resume page building with html and css. Like coding and everything simple.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1530114882489-195de89c0a7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://sonthanhdan.github.io/">
+  <meta property="twitter:title" content="Dan's Resume | Fullstack Web Developer">
+  <meta property="twitter:description" content="Just a simple resume page building with html and css. Like coding and everything simple.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1530114882489-195de89c0a7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dan Resume" />
-  <meta name="keywords" content="Dan Resume" />
-  <meta name="robots" content="index,follow" />
-  <meta name="google-site-verification" content="google15d4ab0b1a05f3f4" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="canonical" href="/" />
-
+  <base href="/" />
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.16/dist/css/uikit.min.css" />
   <style>
@@ -199,7 +213,7 @@
               Binh Tan District, Ho Chi Minh City, Vietnam
               <p>
           </div>
-          <p>Experienced software developer in web development with a demonstrated history of working in the e-commerce
+          <p id="overview">Experienced software developer in web development with a demonstrated history of working in the e-commerce
             domain and services industry</p>
         </div>
         <div class="uk-grid-collapse uk-flex-column uk-margin-top uk-width-1-1" uk-grid>
@@ -345,7 +359,7 @@
 
           <div class="uk-margin-bottom uk-margin-top">
             <h3 class="uk-text-danger uk-margin-remove-bottom">Languages</h3>
-            <p>English</p>
+            <p>English (good communication)</p>
           </div>
 
           <div class="uk-margin-bottom uk-margin-top">
@@ -355,8 +369,8 @@
               PostgreSQL | MySQL | MongoDB | Redis <br>
               API Design | REST APIs | GraphQL <br>
               Nestjs | Vendure.io | Django | Laravel | Cscart<br>
-              Vuejs | Nuxtjs | JQuery | HTML/CSS/SCSS
-              TDD | DDD | Microservices
+              Vuejs | Nuxtjs | JQuery | HTML/CSS/SCSS <br>
+              TDD | DDD | Microservices <br>
             </p>
           </div>
           <div class="uk-margin-bottom uk-margin-top">
@@ -413,25 +427,18 @@
         overlay.classList.toggle('uk-hidden');
         spinner.classList.toggle('uk-hidden');
         setTimeout(function () {
-          var opt = {
+          var option = {
             margin: 1,
             filename: 'CV_DanST_Software_Developer.pdf',
             image: {
               type: 'jpeg',
               quality: 0.98
             },
-            html2canvas: {
-              scale: 2
-            },
-            jsPDF: {
-              unit: 'in',
-              format: 'letter',
-              orientation: 'portrait'
-            }
+            pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
           };
 
           // New Promise-based usage:
-          html2pdf().set(opt).from(container).save();
+          html2pdf().set(option).from(container).save();
           overlay.classList.toggle('uk-hidden');
           spinner.classList.toggle('uk-hidden');
 
